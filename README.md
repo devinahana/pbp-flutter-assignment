@@ -1,11 +1,11 @@
 # Flutter Assignment
 
-Devina Hana
-2106751032
-PBP - E
+Devina Hana<br>
+2106751032<br>
+PBP - E<br>
 
 ### Jelaskan apa yang dimaksud dengan stateless widget dan stateful widget dan jelaskan perbedaan dari keduanya
-Stateful widget merupakan widget yang isinya dapat diubah, misalnya ketika pengguna berinteraksi dengan widget tersebut. Stateful widget ini bersifat dinamik dan umumnya berubah ketika di-_trigger_ oleh suatu _event_ yang dilakukan oleh pengguna. <br> Sementara itu, stateless widget merupakan widget yang tidak dapat diubah. Contoh dari widget ini adalah Icon, IconButton, dan Text.
+Stateful widget merupakan widget yang isinya dapat diubah, misalnya ketika pengguna berinteraksi dengan widget tersebut. Stateful widget ini bersifat dinamik dan umumnya berubah ketika di-_trigger_ oleh suatu _event_ yang dilakukan oleh pengguna. Sementara itu, stateless widget merupakan widget yang tidak dapat diubah. Contoh dari widget ini adalah Icon, IconButton, dan Text.
 
 ### Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya
 * Text<br>
@@ -16,6 +16,8 @@ Widget ini digunakan untuk membentuk _layout_ baik secara horizontal (row) maupu
 Container digunakan untuk mengombinasikan widget-widget _painting_, _positioning_, dan _sizing_ 
 * Scaffold <br>
 Widget ini digunakan untuk mengimplementasikan material _layout_ desain visual, seperti _drawers_, _snack bars_, dsb
+* FloatingActionButton <br>
+Button ini merupakan widget yang ditampilkan di atas layar dan biasa digunakan untuk mengatasi suatu _event_. 
 
 ###  Apa fungsi dari setState()? Jelaskan variabel apa saja yang dapat terdampak dengan fungsi tersebut
 setState merupakan fungsi yang digunakan untuk melakukan pembaharuan dari layar UI secara dinamis. setState ini akan melakukan _rebuild_ dari widget-widget yang ada dan seluruh turunannya. Variabel yang dapat terdampak dari setState adalah seluruh variabel yang dapat diakses, mulai dari variabel _private_, variabel lokal, hingga variabel global.

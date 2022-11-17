@@ -63,7 +63,7 @@ Widget ini digunakan untuk menampilkan menu dropdown pada form
 * onEditingComplete
 
 ### Jelaskan bagaimana cara kerja Navigator dalam "mengganti" halaman dari aplikasi Flutter
-Navigasi mengganti halaman dari aplikasi flutter dengan menggunakan metode routing. Selain itu, halaman-halaman yang ada juga akan ditumpuk dalam stack dan akan di-push atau di-pop sesuai kebutuhan.
+Navigator mengganti halaman dari aplikasi flutter dengan menggunakan metode routing. Halaman-halaman yang ada akan ditumpuk pada tumpukan layar yang cara kerjanya mirip dengan stack dan menggunakan prinsip LIFO (Last-In, First-Out). Secara umum, terdapat dua method yang digunakan oleh navigator ini, yaitu Navigator.push() yang digunakan untuk menambahkan rute ke bagian atas stack (menampilkan halaman baru) dan Navigator.pop() yang digunakan untuk menghapus rute paling atas dari stack (menampilkan halaman sebelumnya).
 
 
 ### Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas

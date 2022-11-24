@@ -72,3 +72,33 @@ Navigator mengganti halaman dari aplikasi flutter dengan menggunakan metode rout
 * Membentuk class MyForm untuk mengimplementasikan form budget yang akan diinput oleh pengguna
 * Membentuk class Budget dan DataBudget yang digunakan sebagai model yang akan ditampilkan pada halaman Data Budget
 * Membentuk class MyBudget yang merupakan halaman untuk menampilkan seluruh budget yang telah dimasukkan pengguna pada form
+
+## Tugas 9
+### Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
+Kita dapat mengembalikan data JSON tanpa membuat model terlebih dahulu. Nantinya, data tersebut akan kita dapatkan dalam bentuk Map<String, dynamic>. Namun, cara ini bukanlah best practice sebab akan membuat kode kita menjadi sulit terbaca dan dipahami akibat valuenya yang dinamis
+
+### Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+* Text : untuk menampilkan text
+* Padding : untuk menambahkan padding bagi widget di dalamnya
+* Row : untuk menampilkan widget secara horizontal
+* Column : untuk menampilkan widget secara vertikal
+* Container : sebagai wadah untuk menampung widget-widget lainnya
+* ListView : sebagai wadah untuk menampung widget dan dapat dibuat banyak secara otomatis dengan bantuan builder
+* ListTile : untuk menampilkan judul-judul film dan memiliki fungsi yang mirip dengan card
+* Checkbox : untuk menampilkan checkbox
+
+### Jelaskan mekanisme pengambilan data dari json hingga dapat ditampilkan pada Flutter
+* Membentuk model yang sesuai dengan membentuk class baru dan atribut-atributnya
+* Menggunakan method fromJson untuk mengubah data JSON menjadi objek model. 
+* Membuat Map dengan nama toJson untuk mengubah objek model sesuai dengan format JSON
+* Membentuk async function untuk melakukan fetch data JSON dari internet dengan bantuan HTTP
+* Menampilkan data yang direturn oleh function tersebut pada page
+
+### Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+* Membentuk model MyWatchList pada mywatchlist.dart sesuai dengan model pada tugas 3
+* Membentuk fungsi fetchWatchList pada fetch.dart yang berfungsi untuk membantu menampilkan data JSON pada page
+* Membentuk class WatchListPage yang akan menampilkan judul-judul film dari model
+* Menambahkan checkbox pada masing-masing ListTile judul
+* Menambahkan border pada ListTile dengan warna yang disesuaikan sudah tidaknya film ditonton 
+* Membentuk class WatchListDetail yang akan menampilkan detail dari film yang diklik pada Watch List Page
+* Menambahkan rute menuju halaman My Watch List pada drawer
